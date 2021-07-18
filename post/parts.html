@@ -1,0 +1,174 @@
+<!--
+    電子部品の説明(初心者用)
+    作成者 : 2110285 斉藤翔吾
+    更新日 : 2021年7月17日
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>電子部品の説明(初心者用)</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="電子部品の説明(初心者用)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/common.css" />
+  <link rel="stylesheet" href="../style/post.css" />
+  <link rel="shortcut icon" href="../img/thumbnail/logo_128x128.ico">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">工学系情報発信サイト</div>
+      <img id="nav-btn" src="../img/menu-btn.svg" width="30px">
+      <nav class="close">
+        <ul>
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="shop.html">ショップ</a></li>
+          <li><a href="micon.html">マイコン</a></li>
+          <li><a href="parts.html">電子部品</a></li>
+          <li><a href="sankousyo.html">参考書</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="article">
+        <h1 class="post-title">電子部品の説明(初心者用)</h1>
+        <p>
+        <ul>
+          <li>コンデンサ</li>
+          <li>抵抗器</li>
+          <li>インダクタ</li>
+          <li>トランジスタ</li>
+          <li>ダイオード</li>
+          <li>集積回路(IC)</li>
+          <li>コネクタ</li>
+          <li>電源スイッチ
+          </li>
+        </ul>
+        </p>
+        <h2>3大受動部品</h2>
+        <p>受動部品とは、供給された電力を整流にしたり増幅させず、そのまま使ったり蓄えたりする部品のことです。
+          この中で特に3つのコンデンサ、抵抗器、インダクタを3大受動部品といい、電子回路を作るときにとても重要な部品となってきます。</p>
+
+        <h3>コンデンサ</h3>
+        <p>コンデンサとは電気を蓄えて放出できる部品で、電源と同じような役割ができる。<br>
+          また、直流電流は通さないが交流電流は通すことができるので、電圧を一定に保つことができる。<br>
+          高校物理のときに「C」としてよく扱われていたと思う。電源から電気をコンデンサに蓄えた後に電源を外してコンデンサを繋げて回路を作ることで、
+          電気が流れると言う問題をやったと思われるが、まさにそれである。<br>
+          コンデンサには正と負があり、足の長いほうが正であり、短いほうが負である。コンデンサを使うときは間違えないように配置したい。</p>
+        以下はコンデンサの写真と回路図記号(様々な種類があるため1つの例である)である。<br>
+        <img src="../img/parts/condenser.jpg">
+        <p>コンデンサ</p><br>
+        <img src="../img/parts/condenser_circuit.png">
+        <p>コンデンサの回路図記号</p>
+        <h3>抵抗器</h3>
+        <p>オームの法則を考えるとわかる通り、抵抗器を使うと電流及び電圧を変えることができる。これにより、過電流及び過電圧を防ぐことができる。
+          また、熱を発生させることができる。実験で抵抗器の熱を発生させる特徴を用いて水の温度を上昇させることをやったことがあるかもしれない。
+          抵抗器を見ると色のついた線が何本か入っているが、この色によって抵抗値がわかるようになっている。
+        </p>
+        以下は抵抗器の写真と回路図記号(様々な種類があるため1つの例である)である。<br>
+        <img src="../img/parts/resistance.png">
+        <p>抵抗器</p><br>
+        <img src="../img/parts/resistance_circuit.png">
+        <p>抵抗器の回路図記号</p>
+        <h3>インダクタ</h3>
+        <p>
+          コイルと言われることもある(コイルとインダクタは別のものを指すときもあるため注意が必要である)。
+          インダクタは電流を流すと磁場が発生する。また、磁場が発生すると、電流が発生するという性質を持っている。
+          また、インダクタは直流電流を通しやすく、交流電流を通しにくいという性質を持ってため、この役割は、コンデンサとは対称的である。<br>
+          中高校の物理で電磁誘導、右ねじの法則としてよく出てきたと思う。
+        </p>
+        以下はインダクタの写真と回路図記号(様々な種類があるため1つの例である)である。<br>
+        <img src="../img/parts/inductor.png">
+        <p>インダクタ</p><br>
+        <img src="../img/parts/inductor_circuit.png">
+        <p>インダクタの回路図記号</p>
+        <h2>能動部品</h2>
+        <p>能動部品とは、受動部品とは逆で、信号を増幅させる、あるいは回路にエネルギーを供給できる部品のことです。
+          能動部品は多くの種類がありますが、特に有名な部品を下に3つ記載しました。
+        </p>
+        <h3>トランジスタ</h3>
+        <p>
+          トランジスタの役割は信号を増幅させる、回路のスイッチの役割として代用できることである。
+          高校物理の電磁気の範囲でNPN型、PNP型、エミッタ、ベース、コレクタを習ったと思うが、これらがトランジスタ仕組みに当たる。
+        </p>
+        以下はトランジスタの写真と回路図記号(様々な種類があるため1つの例である)である。<br>
+        <img src="../img/parts/transistor.png">
+        <p>トランジスタ</p><br>
+        <img src="../img/parts/transistor_circuit.gif">
+        <p>トランジスタの回路図記号</p>
+        <h3>ダイオード</h3>
+        <p>
+          ダイオードは電気の流れを一方向にする、電気を整える、電圧を検波する特徴を持つ。
+          検波では、音声信号を取り出す、光を電流に変えることが可能である。
+          下の回路図記号は高校でも見たことがあると思われる。
+        </p>
+        以下はダイオードの写真と回路図記号(様々な種類があるため1つの例である)である。
+        <img src="../img/parts/diode.jpg"><br>
+        <p>ダイオード</p><br>
+        <img src="../img/parts/diode_circuit.gif">
+        <p>ダイオードの回路図記号</p>
+        <h3>集積回路(IC)</h3>
+        <p>
+          集積回路は、シリコン半導体基板の上にトランジスタ、抵抗器、コンデンサなどの
+          機能を持つ素子をたくさん集積させた電子部品である。
+          回路構成が同じものは多いため集積回路を使うことにより
+          それらをいちいち作らなくても使うことができるためとても便利な部品です。
+          授業で習ったムーアの法則はこれに基づく理論です。
+        </p>
+        以下は集積回路の写真である。<br>
+        <img src="../img/parts/IC.png">
+        <p>集積回路</p>
+        <h2>その他の部品</h2>
+        <h3>コネクタ</h3>
+        <p>はんだこてを用いていちいち接続するのがめんどくさいため、コネクタを用いてつなぐ、切り離すの作業を単純化している。
+          スマホやパソコンを充電する時もコネクタを用いています。
+        </p><br>
+        <img src="../img/parts/conecter.png">
+        <p>コネクタ</p>
+        <h3>マイコン</h3>
+        マイコンは小さなコンピュータで、プログラミングを書いてそれを実行されるときに非常に役立ちます。
+        <a href="./micon.html">こちら</a>のページで詳しく説明しているので是非参考にしてください。
+        下の写真は、マイコンの写真です。<br>
+        <img src="../img/parts/micon.jpg"><br>
+        <p>マイコン</p>
+
+        <h4> 参考</h4>
+        <a href="https://www.koaglobal.com/">KOA</a><br>
+        <a href="https://article.murata.com/ja-jp">村田製作所</a>
+      </article>
+    </main>
+    <aside>
+      <div class="search">
+        <h3>検索</h3>
+        <form class="fluid-input" action="result.html">
+          <input class="box" type="text" name="search-key" placeholder="キーワードを入力">
+          <div class="button">
+            <button>検索</button>
+          </div>
+        </form>
+      </div>
+      <div class="sidebar">
+        <h3>おすすめ記事</h3>
+        <ul>
+          <li class="sidebar-title">電子工作</li>
+          <ul>
+            <li><a href="parts.html">電子部品の説明(初心者用)</a></li>
+            <li><a href="buy.html">初心者が買うべき電子部品及び器具</a></li>
+            <li><a href="shop.html">各電子部品通販ショップの特徴</a></li>
+            <li><a href="micon.html">初心者にオススメのマイコン BEST5</a></li>
+          </ul>
+          <li class="sidebar-title">プログラミング</li>
+          <ul>
+            <li><a href="sankousyo.html">おすすめの参考書</a></li>
+            <li><a href="site.html">おすすめの勉強サイト</a></li>
+          </ul>
+        </ul>
+      </div>
+    </aside>
+    <footer>© 2021 CL21 Team</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*
+    親ページCSSスタイル
+    作成者:2110525_平地浩一
+    更新日:2021/7/9
+*/
+
+.post-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  margin: 1rem;
+  background-color: white;
+}
+
+.post-item:hover {
+  box-shadow: 5px 5px 5px black;
+  transition-duration: 0.3s;
+}
+
+.post-thumnail {
+  width: 100%;
+}
+
+.post-title {
+  margin: 1em;
+  font-size: 1.2em;
+}

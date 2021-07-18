@@ -1,0 +1,63 @@
+<!--
+    個別ページテンプレート
+    作成者 : <<作成者の名前>>
+    更新日 : <<最終更新日>>
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>タイトル</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="サイトの説明" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/common.css" />
+  <link rel="stylesheet" href="../style/post.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">サイトタイトル</div>
+      <nav>
+        <ul>
+          <li><a href="../">TOP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1 class="post-title">CSS Gridで要素を中央に表示する方法</h1>
+        <p>これはテストの文書です。</p>
+        <h2>見出し1</h2>
+        <p>こんな感じもできます</p>
+        <h3>見出し2</h3>
+        <p>こんな感じもできます</p>
+      </article>
+    </main>
+    <aside>
+      <div class="search">
+        <h3>検索</h3>
+      <form id="search" action="result.html">
+        <input
+          id="search-box"
+          name="search-box"
+          type="text"
+          placeholder="キーワードを入力"
+        />
+        <input id="search-button" type="submit" value="検索" />
+      </form>
+    </div>
+      <div class="sidebar">
+        <h3>サイドバー</h3>
+        <p>
+          Webサイトのコンテンツを中央揃えで表示させる方法は、昔からあるmarginを使うテクニックや最近では、flexboxを使ったりpositionとtransformを組み合わせて中央表示させる方法などがありますが、CSS
+          Gridを利用しても同じように要素を中央に表示させることができます。
+        </p>
+      </div>
+    </aside>
+    <footer>© 2021 CL21 Team</footer>
+  </div>
+</body>
+
+</html>

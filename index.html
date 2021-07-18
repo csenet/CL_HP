@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>工学系情報発信サイト</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="img/thumbnail/logo_128x128.ico">
+  <meta name="description" content="shopの説明" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/common.css" />
+  <link rel="stylesheet" href="style/top.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">工学系情報発信サイト</div>
+      <img id="nav-btn" src="./img/menu-btn.svg" width="30px">
+      <nav class="close">
+        <ul>
+          <li><a href="./index.html">TOP</a></li>
+          <li><a href="post/shop.html">ショップ</a></li>
+          <li><a href="post/micon.html">マイコン</a></li>
+          <li><a href="post/parts.html">電子部品</a></li>
+          <li><a href="post/sankousyo.html">参考書</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="post-wrapper">
+        <a class="post-item" href="post/buy.html">
+          <img class="post-thumnail" src="img/thumbnail/kigu_samune.png" />
+          <h2 class="post-title">初心者が買うべき電子部品及び器具</h2>
+        </a>
+        <a class="post-item" href="post/shop.html">
+          <img class="post-thumnail" src="img/shop/shop_samune.png" />
+          <h2 class="post-title">各電子部品通販ショップの特徴</h2>
+        </a>
+        <a class="post-item" href="post/micon.html">
+          <img class="post-thumnail" src="img/thumbnail/maicon_samune.png" />
+          <h2 class="post-title">初心者にオススメのマイコン BEST5</h2>
+        </a>
+        <a class="post-item" href="post/parts.html">
+          <img class="post-thumnail" src="img/thumbnail/buhin_samune.png" />
+          <h2 class="post-title">電子部品の説明(初心者用)</h2>
+        </a>
+        <a class="post-item" href="post/sankousyo.html">
+          <img class="post-thumnail" src="img/thumbnail/book_samune.png" />
+          <h2 class="post-title">おすすめの参考書</h2>
+        </a>
+        <a class="post-item" href="post/site.html">
+          <img class="post-thumnail" src="img/thumbnail/study_samune.png" />
+          <h2 class="post-title">おすすめの勉強サイト</h2>
+        </a>
+      </div>
+    </main>
+    <aside>
+      <div class="search">
+        <h3>検索</h3>
+        <form class="fluid-input" action="post/result.html">
+          <input class="box" type="text" name="search-key" placeholder="キーワードを入力">
+          <div class="button">
+            <button>検索</button>
+          </div>
+        </form>
+      </div>
+      <div class="sidebar">
+        <h3>サイト情報</h3>
+        <p>
+          こちらのサイトは工学系の情報を初心者向けに発信する為に作成しました。
+        </p>
+        <center>
+          <table class="tabindex" border="1">
+            <tr>
+              <th colspan="2">サイト作成メンバー</th>
+            </tr>
+            <tr>
+              <th>氏名</th>
+              <th>学籍番号</th>
+            </tr>
+            <tr>
+              <td>形部 颯</td>
+              <td>2110237</td>
+            </tr>
+            <tr>
+              <td>斉藤 翔吾</td>
+              <td>2110285</td>
+            </tr>
+            <tr>
+              <td>平地 浩一</td>
+              <td>2110525</td>
+            </tr>
+            <tr>
+              <td>山口 哲平</td>
+              <td>2010701</td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <div class="sidebar">
+        <h3>おすすめ記事</h3>
+        <ul>
+          <li class="sidebar-title">電子工作</li>
+          <ul>
+            <li><a href="post/parts.html">電子部品の説明(初心者用)</a></li>
+            <li><a href="post/buy.html">初心者が買うべき電子部品及び器具</a></li>
+            <li><a href="post/shop.html">各電子部品通販ショップの特徴</a></li>
+            <li><a href="post/micon.html">初心者にオススメのマイコン BEST5</a></li>
+          </ul>
+          <li class="sidebar-title">プログラミング</li>
+          <ul>
+            <li><a href="post/sankousyo.html">おすすめの参考書</a></li>
+            <li><a href="post/site.html">おすすめの勉強サイト</a></li>
+          </ul>
+        </ul>
+      </div>
+    </aside>
+    <footer>© 2021 CL21 Team</footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    let flag = true;
+    $("#nav-btn").on("click", function () {
+      if (!flag) {
+        $("nav").removeClass('open');
+        $("nav").addClass('close');
+      } else {
+        $("nav").removeClass('close');
+        $("nav").addClass('open');
+      }
+      console.log(flag);
+      flag = !flag;
+    });
+  </script>
+</body>
+
+</html>

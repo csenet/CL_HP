@@ -1,0 +1,152 @@
+<!--
+    初心者が買うべき電子部品及び器具
+    作成者 : 2110525 平地浩一
+    更新日 : 2021/7/14 2:07
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>初心者にオススメのマイコン BEST5</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="初心者にオススメのマイコン BEST5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/common.css" />
+  <link rel="stylesheet" href="../style/post.css" />
+  <link rel="shortcut icon" href="../img/thumbnail/logo_128x128.ico">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">工学系情報発信サイト</div>
+      <img id="nav-btn" src="../img/menu-btn.svg" width="30px">
+      <nav class="close">
+        <ul>
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="shop.html">ショップ</a></li>
+          <li><a href="micon.html">マイコン</a></li>
+          <li><a href="parts.html">電子部品</a></li>
+          <li><a href="sankousyo.html">参考書</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="article">
+        <h1 class="post-title">初心者にオススメのマイコン BEST5</h1>
+        <p>
+          みなさんはマイコンという言葉は聞いたことがありますか?
+          マイコンはいわゆる小さなコンピュータで，エアコンや自動車など様々な家電や製品に組み込まれています。<br />
+          よく電子工作では，このマイコンを使っていろいろな作品を作るので初心者にもオススメのマイコンを紹介します。
+        </p>
+        <h3>マイコンとマイコンボードの違いについて</h3>
+        <p>
+          ここではマイコンとマイコンボードを同義として扱っていますが，実際にはマイコンボードに乗っているチップがマイコンで，周辺回路や入出力回路などを1枚の基板に乗せて手軽にマイコンを利用できるようにしたのがマイコンボードです。
+        </p>
+        <ul>
+          <li>Arduino</li>
+          <li>Micro::bit</li>
+          <li>M5 Stack</li>
+          <li>Rapsberry pi</li>
+          <li>Nucleo</li>
+        </ul>
+        <h2>Arduino</h2>
+        <img src="../img/micon/arduino.jpeg">
+        <p>
+          電子工作の入門書でも度々登場する人気のマイコンです。Arduino
+          IDEという統合開発環境が提供されており，C言語をベースとしたArduino言語を用いることで簡単に開発を行うことができます。</p>
+        <p>
+          Atmel AVRというAtmel社が開発した8bitのAVRマイコンが搭載されており，16 MHzでの動作が可能になっています。Arduino UNOを始めとして入出力ポートの数やサイズが異なるArduino
+          NanoやMegaといった種類もあり，作品の規模やサイズによって選択可能です。
+        </p>
+        <h2>Micro::bit</h2>
+        <img src="../img/micon/microbit.jpeg">
+        <p>
+          イギリスのBBCによって作られた教育用のマイコンです。Webブラウザだけでプログラミングを行うことができ，シュミレーションやブロックプログラミングなど子供でも簡単に制御できるように設計されています。
+        </p>
+        <p>
+          本体に様々なセンサーやLED，スピーカーなどが内蔵されている他，2台のmicro::bit間で通信したりなどがとても簡単にできます。
+          様々なキットや公式ドキュメントが充実しており，プログラミングは難しそうだけどとりあえずマイコンを触ってみたいならおすすめです。
+        </p>
+        <p>
+          なお，ARM社製のマイコンが搭載されておりMbedにも対応しているので物足りない人はMbedで開発することも可能です。
+        </p>
+        <h2>M5 Stack</h2>
+        <img src="../img/micon/m5stack.jpg">
+        <p>
+          IoT作品に適したマイコンです。内部にESP32というマイコンが使用されており，Wi-Fiに接続することが可能です。
+          開発環境も充実しており，Arduino IDEやその他のツールでも開発が可能になっています。 </p>
+        <p>
+          本体にはリチウムイオンバッテリーやスピーカー，OLEDディスプレイなども内蔵しておりセンサーをつなぐだけでIoTデバイスを開発できます。
+          似たようなマイコンで，クラウドIoTプラットフォームが付属したObnizというマイコンもあるのでおすすめです。
+        </p>
+        <h2>Raspberry pi</h2>
+        <img src="../img/micon/raspberrypi.jpg">
+        <p>
+          Raspberry
+          piは元々は教育用に作られた小型のコンピュータです。通常のコンピュータと同様に，USBでキーボードやマウスをつなげたり，HDMIでディスプレイ出力などもできます。また，本体にはGPIOポートが内蔵されているため直接LEDやサーボーモータなどの制御も可能です。
+        </p>
+        <p>
+          これまで紹介してきたマイコンと違ってOSを書き込む必要がありますが，処理性能も高いので機械学習や画像認識などAIを使ったデバイスや，インターネットにつなげてIoTデバイスにしたり，さらにはサーバーとして運用したりなど可能性は無限大です。
+        </p>
+        <h2>Nucleo</h2>
+        <img src="../img/micon/nucleo.jpeg">
+        <p>
+          NucleoはSTM Micro社のSTM32というチップが搭載されたマイコンです。Arduinoと違って，32bitでかつ動作クロックも高いので高速に処理を行うことができます。
+        </p>
+        <p>
+          開発環境として，C++のMbedという環境や純正のCube IDEといったものに対応しています。ロボコンなどでもよく使用され，PID制御などリアルタイムで応答が求められるような用途でも使用できます。
+        </p>
+        <p>
+          こちらのマイコンもArduino同様に様々なサイズやスペックが用意されているので，低消費電力やクロック数など用途に応じたものを選択できます。
+        </p>
+      </article>
+    </main>
+    <aside>
+      <div class="search">
+        <h3>検索</h3>
+        <form class="fluid-input" action="result.html">
+          <input class="box" type="text" name="search-key" placeholder="キーワードを入力">
+          <div class="button">
+            <button>検索</button>
+          </div>
+        </form>
+      </div>
+      <div class="sidebar">
+        <h3>おすすめ記事</h3>
+        <ul>
+          <li class="sidebar-title">電子工作</li>
+          <ul>
+            <li><a href="parts.html">電子部品の説明(初心者用)</a></li>
+            <li><a href="buy.html">初心者が買うべき電子部品及び器具</a></li>
+            <li><a href="shop.html">各電子部品通販ショップの特徴</a></li>
+            <li><a href="micon.html">初心者にオススメのマイコン BEST5</a></li>
+          </ul>
+          <li class="sidebar-title">プログラミング</li>
+          <ul>
+            <li><a href="sankousyo.html">おすすめの参考書</a></li>
+            <li><a href="site.html">おすすめの勉強サイト</a></li>
+          </ul>
+        </ul>
+      </div>
+    </aside>
+    <footer>© 2021 CL21 Team</footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    let flag = true;
+    $("#nav-btn").on("click", function () {
+      if (!flag) {
+        $("nav").removeClass('open');
+        $("nav").addClass('close');
+      } else {
+        $("nav").removeClass('close');
+        $("nav").addClass('open');
+      }
+      console.log(flag);
+      flag = !flag;
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!--
+    個別ページテンプレート
+    作成者 : <<作成者の名前>>
+    更新日 : <<最終更新日>>
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>おすすめの勉強サイト</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="サイトの説明" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/common.css" />
+  <link rel="stylesheet" href="../style/post.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">工学系情報発信サイト</div>
+      <img id="nav-btn" src="../img/menu-btn.svg" width="30px">
+      <nav class="close">
+        <ul>
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="shop.html">ショップ</a></li>
+          <li><a href="micon.html">マイコン</a></li>
+          <li><a href="parts.html">電子部品</a></li>
+          <li><a href="sankousyo.html">参考書</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="article">
+        <h1 class="post-title">おすすめの勉強サイト</h1>
+        <p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCqmWJJolqAgjIdLqK3zD1QQ">予備校のノリで学ぶ「大学の数学・物理」</a></li>
+          <li><a href="https://prog-8.com/">Progate</a></li>
+          <li><a href="https://dotinstall.com/">ドットインストール</a></li>
+        </ul>
+        </p>
+        <h2>予備校のノリで学ぶ「大学の数学・物理」</h2>
+        <p>大学の講義の内容を予習・復習したいときにこのサイトが役に立ちます。<br>このサイトは「ヨビノリたくみ」という方が配信・運営しているYouTubeチャンネルです。</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/438x0ZS4bV4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UWFTIEIruyc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p>このサイトではこのような大学で学ぶ内容を分かりやすく理解できる動画が数多く存在しています。例を挙げると
+        <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHnmhT1AhMx7bSt0ZOGbIP3c">微分方程式</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHnmhT1AhMx7bSt0ZOGbIP3c">解析学</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHnc1vTpBaCNKMUl6HauQv1a">線形代数</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHmlQ61qmyg4CI9TgFG1opcZ">力学入門</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHlY9nsj_zhgWhyOHnitF4xK">量子力学入門</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLDJfzGjtVLHmZ58sJM_NfuwYN9_DDs1XO">熱力学入門</a></li>
+        </ul>
+        といった多種多様な分野を学習することができます。1動画の再生時間は30分程度なので手軽に視聴することが可能です。
+        </p>
+        <h2>Progate</h2>
+        <p>
+          Progateはプログラミング言語を学習できるサイトです。JavaScript、Ruby、Pythonといったプログラミング言語が全16種学べます。プログラムの書き方を問題形式で学習し、そのプログラミング言語の基礎の理解を深めることができます。
+          基礎レベルのレッスンは無料ですが、全てのレッスンを受講するには月1000円ほどかかります。
+        </p>
+        <h2>ドットインストール</h2>
+        <p>ドットインストールはプログラミング言語を3分間の動画で学べるサイトです。</p>
+      </article>
+    </main>
+    <aside>
+      <div class="search">
+        <h3>検索</h3>
+        <form class="fluid-input" action="result.html">
+          <input class="box" type="text" name="search-key" placeholder="キーワードを入力">
+          <div class="button">
+            <button>検索</button>
+          </div>
+        </form>
+      </div>
+      <div class="sidebar">
+        <h3>おすすめ記事</h3>
+        <ul>
+          <li class="sidebar-title">電子工作</li>
+          <ul>
+            <li><a href="parts.html">電子部品の説明(初心者用)</a></li>
+            <li><a href="buy.html">初心者が買うべき電子部品及び器具</a></li>
+            <li><a href="shop.html">各電子部品通販ショップの特徴</a></li>
+            <li><a href="micon.html">初心者にオススメのマイコン BEST5</a></li>
+          </ul>
+          <li class="sidebar-title">プログラミング</li>
+          <ul>
+            <li><a href="sankousyo.html">おすすめの参考書</a></li>
+            <li><a href="site.html">おすすめの勉強サイト</a></li>
+          </ul>
+        </ul>
+      </div>
+    </aside>
+    <footer>© 2021 CL21 Team</footer>
+  </div>
+</body>
+
+</html>
